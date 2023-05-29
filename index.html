@@ -7,33 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Cv Karlita Vasquez</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="header-content">
+    <header class="header-index">
+        <div class=" flex-content header-content ">
             <P class="style-text-header">Hola soy Karlita, pero puedes llamarme ...</P>
             <div class="container-name">
                 <h1>Karla Vásquez</h1>
             </div>
-
             <P>Desarrolladora Web</P>
-            <a href="/about.html">
-                <button type="button" class="btn-about"> Acerca de mi</button>
-            </a>
+            <a href="/about.html" class="btn-about">Acerca de mi</a>
         </div>
 
     </header>
-    <main>
+    <main class="flex-content">
         <div class="container-cv">
-            <section class="personal-information">
-                <div class="container-image-personal">
+            <section class=" flex-content personal-information">
+                <div class=" container-image-personal">
                     <img src="./img/foto.png" alt="photografy">
                 </div>
                 <div>
@@ -61,11 +57,8 @@
                 </div>
 
             </section>
-            <section>
-                <div>
-                    <h2>Formación Académica</h2>
-                </div>
-
+            <section class="flex-content container-section">
+                <h2>Formación Académica</h2>
                 <dl>
                     <dt>05/2022 - 11/2022:
                     <dd>Bootcamp Laboratoria</dd>
@@ -77,65 +70,103 @@
                     </dt>
                 </dl>
             </section>
-            <section class="certification">
+            <section class="flex-content container-section">
                 <h2>Certificaciones</h2>
-                <h3>Algoritmos JavaScript y Estructura de Datos</h3>
-                <p>FreecodeCamp 2023</p>
-                <h3>Legacy Responsive Web Design</h3>
-                <p>FreecodeCamp 2022</p>
-            </section>
-            <section class="proyects">
                 <div>
-                    <h2> Proyectos Realizados</h2>
-                </div>
+                    <div class="certification">
+                        <div class="icon-preview">
+                            <h3>Algoritmos JavaScript y Estructura de Datos</h3>
+                            <a href="https://www.freecodecamp.org/certification/fcc60b5554a-c3d0-4b77-aae5-21f43fcc66c1/javascript-algorithms-and-data-structures"
+                                target="_blank">
+                                <span class="material-symbols-outlined icon-color">
+                                    description
+                                </span>
+                            </a>
+                        </div>
 
+                        <p>02/2023</p>
+                        <div>
+                            <div class="icon-preview">
+                                <h3>Legacy Responsive Web Design</h3>
+                                <a href="https://www.freecodecamp.org/certification/fcc60b5554a-c3d0-4b77-aae5-21f43fcc66c1/responsive-web-design"
+                                    target="_blank">
+                                    <span class="material-symbols-outlined icon-color">
+                                        description
+                                    </span>
+                                </a>
+                            </div>
+
+                            <p>10/2022</p>
+                        </div>
+                    </div>
+
+            </section>
+            <section class=" flex-content container-proyects container-section">
+                <h2> Proyectos Realizados</h2>
                 <dl>
-                    <dt>05/2022 Card-Validation:
-                    <dd>Es una aplicación web que le permite al usuario validar el número de una tarjeta de crédito
-                        antes de ser utilizada para cualquier pago o compra en una plataforma online.
-                    </dd>
-                    </dt>
-                    <dt>06/2022 Data-Lovers
-                    <dd>Es una página Web que contiene datos de Pokemones. Los usuarios tienen la facilidad de encontrar
-                        información de los pokemones de manera dinámica y sintetizada a través de las opciones de
-                        buscar,
-                        ordenar y filtrar.
-                    </dd>
-                    </dt>
-                    <dt>07/2022 Help-Taster (Social Network)
-                    <dd>Es una app enfocado en dar recomendaciones sobre Restaurantes,
-                        conectando de esta manera entre comensales que optan por la gastronomía Peruana
-                    </dd>
-                    </dt>
-                    <dt>08/2022 Md-Links
-                    <dd>
-                        Es una libreria de NodeJS que permite analizar los archivos de tipo Markdown,
-                        ya sea desde un archivo o directorio, que pueden estar alojados dentro de carpetas .
-                    </dd>
-                    </dt>
-                    <dt>09/2022 Burguer Queen Api-Client
-                    <dd>
-                        Es una aplicacion web-responsive enfocado en un pequeño restaurante de hamburguesas,
-                        que está creciendo,necesita un sistema a través del cual puedan tomar pedidos usando una tablet,
-                        y enviarlos a la cocina para que se preparen ordenada y eficientemente
-                    </dd>
-                    </dt>
-                    <dt>01/2023 My Briefcase
-                    <dd>
-                        Es el desarrollo de mi portafolio personal, para demostrar mis habilidades como desarrolladora.
-                        He aplicado buenas prácticas de desarrollo, organizando mi código de manera ordenada y
-                        manteniéndolo
-                        limpio y legible. Además, he optimizado el rendimiento de mi portafolio, asegurándome de que sea
-                        responsive
-                        y accesible. Estoy emocionada por compartir mi progreso y logros a través de este proyecto.
-                    </dd>
-                    </dt>
+                    <div class="proyect">
+                        <dt>05/2022 Card-Validation:
+                        <dd>Es una aplicación web que le permite al usuario validar el número de una tarjeta de crédito
+                            antes de ser utilizada para cualquier pago o compra en una plataforma online.
+                        </dd>
+                        </dt>
+                    </div>
+                    <div class="proyect">
+                        <dt>06/2022 Data-Lovers:
+                        <dd>Es una página Web que contiene datos de Pokemones. Los usuarios tienen la facilidad de
+                            encontrar
+                            información de los pokemones de manera dinámica y sintetizada a través de las opciones de
+                            buscar,
+                            ordenar y filtrar.
+                        </dd>
+                        </dt>
+                    </div>
+                    <div class="proyect">
+                        <dt>07/2022 Help-Taster (Social Network):
+                        <dd>Es una app enfocado en dar recomendaciones sobre Restaurantes,
+                            conectando de esta manera entre comensales que optan por la gastronomía Peruana
+                        </dd>
+                        </dt>
+                    </div>
+                    <div class="proyect">
+                        <dt>08/2022 Md-Links:
+                        <dd>
+                            Es una libreria de NodeJS que permite analizar los archivos de tipo Markdown,
+                            ya sea desde un archivo o directorio, que pueden estar alojados dentro de carpetas .
+                        </dd>
+                        </dt>
+                    </div>
+
+                    <div class="proyect">
+                        <dt>09/2022 Burguer Queen Api-Client:
+                        <dd>
+                            Es una aplicacion web-responsive enfocado en un pequeño restaurante de hamburguesas,
+                            que está creciendo,necesita un sistema a través del cual puedan tomar pedidos usando una
+                            tablet,y enviarlos a la cocina para que se preparen ordenada y eficiente.
+                        </dd>
+                        </dt>
+                    </div>
+                    <div class="proyect">
+                        <dt>01/2023 My Briefcase:
+                        <dd>
+                            Es el desarrollo de mi portafolio personal, para demostrar mis habilidades como
+                            desarrolladora.
+                            He aplicado buenas prácticas de desarrollo, organizando mi código de manera ordenada y
+                            manteniéndolo
+                            limpio y legible. Además, he optimizado el rendimiento de mi portafolio, asegurándome de que
+                            sea
+                            responsive
+                            y accesible. Estoy emocionada por compartir mi progreso y logros a través de este proyecto.
+                        </dd>
+                        </dt>
+                    </div>
+
                 </dl>
             </section>
-            <section">
-                <div>
+            <section class="flex-content container-section">
+                <div class="skills">
                     <h2>Habilidades Blandas</h2>
-                    <div class="graphic-container">
+                    <div class="graphic-container flex-content">
                         <label for="file">Comunicación Efectiva</label>
                         <progress id="file" max="100" value="60"> 70% </progress>
                         <label for="file">Flexibilidad y Adaptabilidad</label>
@@ -148,32 +179,32 @@
                 </div>
 
 
-                </section>
-                <section>
-                    <div class="skills">
-                        <h2>Tecnologias</h2>
-                        <div class="graphic-container">
-                            <label for="file-js">JavaScript ES6</label>
-                            <progress id="file-js" max="100" value="60"> 60% </progress>
-                            <label for="file-html">HTML 5</label>
-                            <progress id="file-html" max="100" value="70"> 70% </progress>
-                            <label for="file-css">CSS3</label>
-                            <progress id="file-css" max="100" value="70"> 70% </progress>
-                            <label for="file-ts">TypeScript</label>
-                            <progress id="file-ts" max="100" value="30"> 30% </progress>
-                            <label for="file-react">React</label>
-                            <progress id="file-react" max="100" value="30"> 30% </progress>
-                            <label for="file-figma">Figma</label>
-                            <progress id="file-figma" max="100" value="60"> 60% </progress>
-                            <label for="file-jest">Jest Test</label>
-                            <progress id="file-jest" max="100" value="60"> 60% </progress>
-                            <label for="file-node">NodeJS</label>
-                            <progress id="file-node" max="100" value="40"> 40% </progress>
-                            <label for="file-git">Git Hub</label>
-                            <progress id="file-git" max="100" value="60"> 60% </progress>
-                        </div>
+            </section>
+            <section class="flex-content container-section">
+                <div class="skills">
+                    <h2>Tecnologias</h2>
+                    <div class="graphic-container flex-content">
+                        <label for="file-js">JavaScript ES6</label>
+                        <progress id="file-js" max="100" value="60"> 60% </progress>
+                        <label for="file-html">HTML 5</label>
+                        <progress id="file-html" max="100" value="70"> 70% </progress>
+                        <label for="file-css">CSS3</label>
+                        <progress id="file-css" max="100" value="70"> 70% </progress>
+                        <label for="file-ts">TypeScript</label>
+                        <progress id="file-ts" max="100" value="30"> 30% </progress>
+                        <label for="file-react">React</label>
+                        <progress id="file-react" max="100" value="30"> 30% </progress>
+                        <label for="file-figma">Figma</label>
+                        <progress id="file-figma" max="100" value="60"> 60% </progress>
+                        <label for="file-jest">Jest Test</label>
+                        <progress id="file-jest" max="100" value="60"> 60% </progress>
+                        <label for="file-node">NodeJS</label>
+                        <progress id="file-node" max="100" value="40"> 40% </progress>
+                        <label for="file-git">Git Hub</label>
+                        <progress id="file-git" max="100" value="60"> 60% </progress>
                     </div>
-                </section>
+                </div>
+            </section>
 
         </div>
 
@@ -181,9 +212,15 @@
     </main>
     <footer>
         <div class="logos-container">
-            <img src="./img/icons/LinkedIn-PNG-Pic-Background.png" alt="logo Linkedin" class="logo-footer">
-            <img src="./img/icons/Github-PNG.png" alt=" logo GitHub" class="logo-footer">
-            <img src="./img/icons/imgEmailc.png" alt="logo Email" class="logo-footer">
+            <a href="https://www.linkedin.com/in/karla-vasquez-47633b112/" target="_blank">
+                <img src="./img/icons/LinkedIn-PNG-Pic-Background.png" alt="logo Linkedin" class="logo-footer">
+            </a>
+            <a href="https://github.com/karlavasquez8" target="_blank">
+                <img src="./img/icons/Github-PNG.png" alt=" logo GitHub" class="logo-footer">
+            </a>
+            <a href="mailto:karlavasquez817@gmail.com" target="_blank" rel="noreferrer">
+                <img src="./img/icons/imgEmailc.png" alt="logo Email" class="logo-footer">
+            </a>
         </div>
         <p>© 2023 Karlita Vásquez</p>
     </footer>
